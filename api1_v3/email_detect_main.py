@@ -453,6 +453,65 @@ async def email_detect(
         product_type, email_content,
         product_model, product_sn,
         problem_description_content):
+    # Test mode support - return mock response without calling external services
+    TEST_MODE = os.getenv('TEST_MODE', 'false').lower() == 'true'
+    if TEST_MODE:
+        import time
+        mock_output = {
+            "case_id": case_id,
+            "gpt_extract": {
+                "user_summary": "Test mode: Mock summary of the email content",
+                "type": "available",
+                "email_split_sentence": [
+                    {
+                        "extract_type": "split",
+                        "extract_type_num": 1,
+                        "gpt_output": "Test mode: User is inquiring about product support",
+                        "intent": "Technical Support",
+                        "top1_kb": 12345,
+                        "top2_kb": 12346,
+                        "top3_kb": 12347,
+                        "top4_kb": 12348
+                    }
+                ]
+            },
+            "check_info": {
+                "start_time_ts": int(time.time()),
+                "end_time_ts": int(time.time()) + 2,
+                "lang": "zh" if any(ord(c) > 127 for c in email_content) else "en",
+                "product_line": product_type,
+                "email_split_info": [
+                    {
+                        "extract_type": "split",
+                        "extract_type_num": 1,
+                        "extract_type_num_org": 1,
+                        "gpt_output_org": email_content[:100],
+                        "gpt_output": "Test mode: Translated content",
+                        "intent": "Technical Support",
+                        "intent_similarity": 0.92,
+                        "intent_key": "test_key",
+                        "top1_kb": 12345,
+                        "top1_kb_similarity": 0.85,
+                        "top1_kb_key": "kb_1",
+                        "top2_kb": 12346,
+                        "top2_kb_similarity": 0.78,
+                        "top2_kb_key": "kb_2",
+                        "top3_kb": 12347,
+                        "top3_kb_similarity": 0.72,
+                        "top3_kb_key": "kb_3",
+                        "top4_kb": 12348,
+                        "top4_kb_similarity": 0.68,
+                        "top4_kb_key": "kb_4"
+                    }
+                ]
+            }
+        }
+        return {
+            "status": 200,
+            "message": "Success (Test Mode)",
+            "output": mock_output
+        }
+    
     global txt_
     input_data = {
         "case_id": case_id,
