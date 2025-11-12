@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import json
 try:
-    from .call_gemini import call_gemini as call_gpt
+    from .call_gpt import call_gpt4o as call_gpt
 except ImportError:
-    from call_gemini import call_gemini as call_gpt
+    from call_gpt import call_gpt4o as call_gpt
 
 
 def summary_prompt(email_context):
