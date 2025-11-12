@@ -26,6 +26,14 @@ async def lifespan(app: FastAPI):
     await aiohttp_client.initialize()
     app.state.aiohttp_client = aiohttp_client
 
+    # google translate client
+    from api_structure.src.clients.google_translate import (
+        GoogleTranslateClient
+    )
+    google_translate_client = GoogleTranslateClient()
+    await google_translate_client.initialize()
+    app.state.google_translate_client = google_translate_client
+
     # cosmos_client = CosmosDbClient()
     # await cosmos_client.initialize()
     # app.state.cosmos_client = cosmos_client
@@ -35,6 +43,7 @@ async def lifespan(app: FastAPI):
     print("Application shutting down...")
     await app.state.gpt_client.close()
     await app.state.aiohttp_client.close()
+    await app.state.google_translate_client.close()
     # await app.state.cosmos_client.close()
 
 
@@ -131,16 +140,32 @@ app.add_exception_handler(
 
 # --------------------- endpoints ---------------------------------------------
 
-# from fastapi import Response
-# from pydantic import BaseModel
+from fastapi import Response, Request
+from pydantic import BaseModel
 
 # routers
+from api_structure.src.routers.email_detect import (
+    email_detect_handler,
+    EmailDetectInput
+)
 
 
 # root endpoint
 @app.get("/")
 async def root():
     return {"message": "api is running"}
+
+
+# email detect endpoint
+@app.post("/v3/emailDetect")
+async def v3_email_detect(
+    input_data: EmailDetectInput,
+    request: Request,
+    response: Response
+):
+    """Email detection endpoint v3."""
+    result = await email_detect_handler(input_data, request)
+    return result
     
 # --------------------- local test --------------------------------------------
 

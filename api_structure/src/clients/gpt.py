@@ -199,3 +199,35 @@ class GptClient:
             temperature=temperature,
             model=model
         )
+
+    async def call_with_conversation(
+        self,
+        conversation: list[dict],
+        timeout: float = 5.0,
+        temperature: float = 0.0,
+        model: Optional[str] = None
+    ) -> str:
+        """Call GPT-4 with a full conversation history.
+        
+        Args:
+            conversation: List of message dicts with 'role' and 'content'.
+            timeout: Request timeout in seconds. Defaults to 5.0.
+            temperature: Sampling temperature. Defaults to 0.0.
+            model: Model name to use. If None, uses default model.
+        
+        Returns:
+            The model's response content as a string.
+        
+        Raises:
+            ValueError: If the client has not been initialized.
+        """
+        result = await self._call(
+            conversation,
+            timeout=timeout,
+            temperature=temperature,
+            model=model
+        )
+        # Return as string if it's a dict
+        if isinstance(result, dict):
+            return json.dumps(result)
+        return result
