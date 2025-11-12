@@ -1,0 +1,12 @@
+{
+  "case_id": "AOCC_test",
+  "email": "dawid@kaczmarski.pl",
+  "phone": "555444333",
+  "case_date": 1747825750000,
+  "site": "uk",
+  "product_type": "Graphic Card",
+  "email_content": "你好",
+  "product_model": "K3605VC",
+  "product_sn": "S1N0CX065068038",
+  "problem_description_content": "你好"
+}
