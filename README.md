@@ -116,3 +116,30 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
+## Testing (Issue #1 Verification)
+
+To verify the environment setup and test the `/v3/emailDetect` endpoint:
+
+### Quick Test (TEST_MODE)
+
+```bash
+# Start server with test mode
+export TEST_MODE=true
+export $(cat .env.test | xargs)
+python -m main
+
+# In another terminal, run the test
+python test_api_endpoint.py
+```
+
+For detailed testing instructions, see [TESTING_GUIDE.md](TESTING_GUIDE.md).
+
+### Expected Result
+
+The test should return:
+- Status code: 200
+- Message: "Success (Test Mode)"
+- Valid JSON response structure
+
+This confirms the API endpoint is working correctly.
