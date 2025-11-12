@@ -6,3 +6,5 @@ __pycache__/
 _key/
 *.zip
 env/
+.env*
+!.env.test
