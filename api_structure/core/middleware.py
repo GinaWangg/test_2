@@ -13,6 +13,7 @@ PATH_TO_CONTAINER: dict[str, str] = {
     "/v1/test_gpt": "test_gpt",
     "/v1/test_api": "test_api",
     "/v1/test_aiohttp": "test_aiohttp",
+    "/v3/emailDetect": "emailDetect_v3",
 }
 
 class RequestLoggingMiddleware(BaseHTTPMiddleware):
