@@ -1,21 +1,22 @@
 """Email split extraction handler."""
 
 import json
+
 from api_structure.core.timer import timed
 from api_structure.src.clients.gpt import GptClient
 
 
 def _build_split_prompt(email_context: str, lang: str) -> tuple[str, str]:
     """Build system and user prompts for email splitting.
-    
+
     Args:
         email_context: Email content to split.
         lang: Language code for output.
-        
+
     Returns:
         Tuple of (system_prompt, user_prompt).
     """
-    sys_prompt = '''
+    sys_prompt = """
 You are an intelligent assistant whose task is to extract structured product-related information from customer emails. Your goal is to decompose the customer's message into standalone, self-contained sentences that clearly describe individual product issues or inquiries.
 
 ## Extraction Rules:
@@ -101,45 +102,43 @@ Provide the response in `"{lang}"` and structure it in JSON format as follows:
   "extracted_sentence2": "...",
   ...
 }
-'''
+"""
     user_prompt = (
-        f'The email context:{email_context}.\n'
+        f"The email context:{email_context}.\n"
         f'Provide the response in "{lang}" and structure it in JSON format '
-        'as described.'
+        "as described."
     )
     return sys_prompt, user_prompt
 
 
 @timed(task_name="email_split")
 async def generate_email_split(
-        gpt_client: GptClient,
-        email_content: str,
-        lang: str
+    gpt_client: GptClient, email_content: str, lang: str
 ) -> dict:
     """Generate email split extraction.
-    
+
     Args:
         gpt_client: Initialized GPT client.
         email_content: Email content to split.
         lang: Language code for output.
-        
+
     Returns:
         Dictionary with extracted sentences.
-        
+
     Raises:
         ValueError: If GPT response is invalid.
     """
     sys_prompt, user_prompt = _build_split_prompt(email_content, lang)
     conversation = [
-        {'role': 'system', 'content': sys_prompt},
-        {'role': 'user', 'content': user_prompt}
+        {"role": "system", "content": sys_prompt},
+        {"role": "user", "content": user_prompt},
     ]
-    
+
     response = await gpt_client.call_with_conversation(conversation)
-    
+
     try:
         if response is None:
-            raise ValueError('GPT response is None')
+            raise ValueError("GPT response is None")
         result = json.loads(response)
         return result
     except Exception:

@@ -12,7 +12,7 @@ product_mapping_table = {
         "gaming nb": "notebook",
         "zenfone": "phone",
         "premium phone": "phone",
-        "padfone": "phone"
+        "padfone": "phone",
     },
     "au": {
         "commercial nb": "notebook",
@@ -26,7 +26,7 @@ product_mapping_table = {
         "asus nuc elements": "nuc",
         "asus nuc full system": "nuc",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "bd": {
         "notebook": "notebook",
@@ -40,7 +40,7 @@ product_mapping_table = {
         "eee pad": "pad",
         "zenfone": "phone",
         "premium phone": "phone",
-        "padfone": "phone"
+        "padfone": "phone",
     },
     "be-fr": {
         "desktop chassis": "accessory",
@@ -61,7 +61,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "be-nl": {
         "gaming handhelds": "gaming_handhelds",
@@ -78,7 +78,7 @@ product_mapping_table = {
         "asus nuc full system": "nuc",
         "zenfone": "phone",
         "premium phone": "phone",
-        "padfone": "phone"
+        "padfone": "phone",
     },
     "br": {
         "commercial nb": "notebook",
@@ -94,7 +94,7 @@ product_mapping_table = {
         "asus nuc full system": "nuc",
         "zenfone": "phone",
         "premium phone": "phone",
-        "padfone": "phone"
+        "padfone": "phone",
     },
     "ca-en": {
         "commercial nb": "notebook",
@@ -117,7 +117,7 @@ product_mapping_table = {
         "zenpad": "pad",
         "eee pad": "pad",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "ca-fr": {
         "commercial nb": "notebook",
@@ -140,7 +140,7 @@ product_mapping_table = {
         "zenpad": "pad",
         "eee pad": "pad",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "ch-de": {
         "commercial nb": "notebook",
@@ -166,7 +166,7 @@ product_mapping_table = {
         "healthcare system": "wearable",
         "wearable": "wearable",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "ch-en": {
         "commercial nb": "notebook",
@@ -185,7 +185,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "ch-fr": {
         "desktop chassis": "accessory",
@@ -208,7 +208,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "cl": {
         "commercial nb": "notebook",
@@ -218,7 +218,7 @@ product_mapping_table = {
         "gaming nb": "notebook",
         "zenfone": "phone",
         "premium phone": "phone",
-        "padfone": "phone"
+        "padfone": "phone",
     },
     "co": {
         "lcd monitors": "lcd",
@@ -240,7 +240,7 @@ product_mapping_table = {
         "desktop pc": "aio",
         "all-in-one pcs": "aio",
         "vivo pc": "aio",
-        "gaming dt": "aio"
+        "gaming dt": "aio",
     },
     "cz": {
         "desktop chassis": "accessory",
@@ -267,7 +267,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "de": {
         "desktop chassis": "accessory",
@@ -298,7 +298,7 @@ product_mapping_table = {
         "healthcare system": "wearable",
         "wearable": "wearable",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "dk": {
         "desktop chassis": "accessory",
@@ -321,7 +321,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "eg": {
         "desktop chassis": "accessory",
@@ -353,7 +353,7 @@ product_mapping_table = {
         "healthcare system": "wearable",
         "wearable": "wearable",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "es": {
         "desktop chassis": "accessory",
@@ -382,7 +382,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "fi": {
         "desktop chassis": "accessory",
@@ -405,7 +405,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "fr": {
         "desktop chassis": "accessory",
@@ -428,7 +428,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "global": {
         "all-in-one pcs": "aio_chrome",
@@ -463,7 +463,7 @@ product_mapping_table = {
         "wearable": "wearable",
         "wireless": "wireless",
         "networking": "wireless",
-        "nas": "wireless"
+        "nas": "wireless",
     },
     "hk": {
         "commercial nb": "notebook",
@@ -477,7 +477,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "hu": {
         "desktop chassis": "accessory",
@@ -499,7 +499,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "id": {
         "commercial nb": "notebook",
@@ -522,7 +522,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "il": {
         "desktop chassis": "accessory",
@@ -548,7 +548,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "in": {
         "commercial nb": "notebook",
@@ -562,7 +562,7 @@ product_mapping_table = {
         "asus nuc full system": "nuc",
         "zenfone": "phone",
         "premium phone": "phone",
-        "padfone": "phone"
+        "padfone": "phone",
     },
     "it": {
         "desktop chassis": "accessory",
@@ -589,7 +589,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "jp": {
         "commercial nb": "notebook",
@@ -612,7 +612,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "kh": {
         "desktop pc": "desktop",
@@ -629,7 +629,7 @@ product_mapping_table = {
         "asus nuc full system": "nuc",
         "zenfone": "phone",
         "premium phone": "phone",
-        "padfone": "phone"
+        "padfone": "phone",
     },
     "kr": {
         "commercial nb": "notebook",
@@ -641,7 +641,7 @@ product_mapping_table = {
         "asus nuc elements": "nuc",
         "asus nuc full system": "nuc",
         "zenpad": "pad",
-        "eee pad": "pad"
+        "eee pad": "pad",
     },
     "latin": {
         "commercial nb": "notebook",
@@ -655,7 +655,7 @@ product_mapping_table = {
         "asus nuc full system": "nuc",
         "zenfone": "phone",
         "premium phone": "phone",
-        "padfone": "phone"
+        "padfone": "phone",
     },
     "lk": {
         "commercial nb": "notebook",
@@ -664,7 +664,7 @@ product_mapping_table = {
         "projectors": "lcd",
         "motherboard": "motherboard",
         "notebook": "notebook",
-        "gaming nb": "notebook"
+        "gaming nb": "notebook",
     },
     "me-ar": {
         "desktop chassis": "accessory",
@@ -696,7 +696,7 @@ product_mapping_table = {
         "healthcare system": "wearable",
         "wearable": "wearable",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "me-en": {
         "desktop chassis": "accessory",
@@ -728,7 +728,7 @@ product_mapping_table = {
         "healthcare system": "wearable",
         "wearable": "wearable",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "mx": {
         "commercial nb": "notebook",
@@ -742,7 +742,7 @@ product_mapping_table = {
         "asus nuc full system": "nuc",
         "zenfone": "phone",
         "premium phone": "phone",
-        "padfone": "phone"
+        "padfone": "phone",
     },
     "my": {
         "commercial nb": "notebook",
@@ -756,7 +756,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "nl": {
         "desktop chassis": "accessory",
@@ -779,7 +779,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "no": {
         "desktop chassis": "accessory",
@@ -802,7 +802,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "nz": {
         "commercial nb": "notebook",
@@ -816,7 +816,7 @@ product_mapping_table = {
         "asus nuc elements": "nuc",
         "asus nuc full system": "nuc",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "pe": {
         "commercial nb": "notebook",
@@ -826,7 +826,7 @@ product_mapping_table = {
         "gaming nb": "notebook",
         "zenfone": "phone",
         "premium phone": "phone",
-        "padfone": "phone"
+        "padfone": "phone",
     },
     "ph": {
         "commercial nb": "notebook",
@@ -844,7 +844,7 @@ product_mapping_table = {
         "asus nuc full system": "nuc",
         "zenfone": "phone",
         "premium phone": "phone",
-        "padfone": "phone"
+        "padfone": "phone",
     },
     "pl": {
         "desktop chassis": "accessory",
@@ -871,7 +871,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "pt": {
         "desktop chassis": "accessory",
@@ -900,7 +900,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "ro": {
         "desktop chassis": "accessory",
@@ -928,7 +928,7 @@ product_mapping_table = {
         "healthcare system": "wearable",
         "wearable": "wearable",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "sa-en": {
         "desktop chassis": "accessory",
@@ -960,7 +960,7 @@ product_mapping_table = {
         "healthcare system": "wearable",
         "wearable": "wearable",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "se": {
         "desktop chassis": "accessory",
@@ -983,7 +983,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "sg": {
         "commercial nb": "notebook",
@@ -998,7 +998,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "sk": {
         "commercial nb": "notebook",
@@ -1021,7 +1021,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "th": {
         "commercial nb": "notebook",
@@ -1034,7 +1034,7 @@ product_mapping_table = {
         "asus nuc elements": "nuc",
         "asus nuc full system": "nuc",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "tr": {
         "desktop chassis": "accessory",
@@ -1060,7 +1060,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "tw": {
         "commercial nb": "notebook",
@@ -1092,7 +1092,7 @@ product_mapping_table = {
         "wearable": "wearable",
         "wireless": "wireless",
         "networking": "wireless",
-        "intelligent robot": "zenbo"
+        "intelligent robot": "zenbo",
     },
     "ua-ua": {
         "desktop chassis": "accessory",
@@ -1118,7 +1118,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "uk": {
         "desktop chassis": "accessory",
@@ -1147,7 +1147,7 @@ product_mapping_table = {
         "healthcare system": "wearable",
         "wearable": "wearable",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "us": {
         "commercial nb": "notebook",
@@ -1170,7 +1170,7 @@ product_mapping_table = {
         "zenpad": "pad",
         "eee pad": "pad",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "vn": {
         "desktop pc": "desktop",
@@ -1192,7 +1192,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "za": {
         "desktop chassis": "accessory",
@@ -1220,7 +1220,7 @@ product_mapping_table = {
         "premium phone": "phone",
         "padfone": "phone",
         "wireless": "wireless",
-        "networking": "wireless"
+        "networking": "wireless",
     },
     "rs-en": {
         "desktop chassis": "accessory",
@@ -1246,22 +1246,26 @@ product_mapping_table = {
         "asus nuc elements": "nuc",
         "asus nuc full system": "nuc",
         "zenpad": "pad",
-        "eee pad": "pad"
-    }
+        "eee pad": "pad",
+    },
 }
+
 
 def find_productline(site, product_type):
     site_ = site.lower()
     product_type_ = product_type.lower()
-    if site_ in product_mapping_table and product_type_ in product_mapping_table[site_]:
+    if (
+        site_ in product_mapping_table
+        and product_type_ in product_mapping_table[site_]
+    ):
         return product_mapping_table[site_][product_type_]
     else:
-        raise KeyError (f'Not supported by Genio, The site = {site} and product_type = {product_type} are not supported by Genio.')
+        raise KeyError(
+            f"Not supported by Genio, The site = {site} and product_type = {product_type} are not supported by Genio."
+        )
 
 
 # if __name__ == "__main__":
 #     site = "tw"
 #     product_type = "Notebook"
 #     print(find_productline(site, product_type))
-
-
